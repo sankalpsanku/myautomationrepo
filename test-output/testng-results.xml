@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="57299" started-at="2018-06-25T10:48:47Z" finished-at="2018-06-25T10:49:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="57299" started-at="2018-06-25T10:48:47Z" finished-at="2018-06-25T10:49:45Z">
+      <class name="selenium1pack.BookTicketTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="beforeTest" is-config="true" duration-ms="35459" started-at="2018-06-25T10:48:47Z" finished-at="2018-06-25T10:49:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="login" duration-ms="20823" started-at="2018-06-25T10:49:24Z" data-provider="logindata" finished-at="2018-06-25T10:49:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mercury]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-25T10:49:45Z" finished-at="2018-06-25T10:49:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- selenium1pack.BookTicketTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
