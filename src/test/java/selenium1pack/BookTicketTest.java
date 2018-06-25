@@ -2,13 +2,17 @@ package selenium1pack;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+
 
 import pages.LoginPage;
 import utility.ExcelUtility;
@@ -23,8 +27,34 @@ public class BookTicketTest {
 		LoginPage.uname.sendKeys(txtusername);
 		LoginPage.pass.sendKeys(txtpassword);
 		LoginPage.login_button.click();
-				
+		Assert.assertEquals("Find a Flight: Mercury Tours:", driver.getTitle());
   }
+	
+	@Test(priority=2)
+	public void findFlight()
+	{
+		driver.findElement(By.xpath("/html/body/div/table/tbody/tr/td[2]/table/tbody/tr[4]/td/table/tbody/tr/td[2]/table/tbody/tr[5]/td/form/table/tbody/tr[2]/td[2]/b/font/input[2]")).click();
+		
+		Select passengers = new Select(driver.findElement(By.name("passCount")));	
+		passengers.selectByVisibleText("3");
+		
+		Select from = new Select(driver.findElement(By.name("fromPort")));
+		from.selectByVisibleText("London");
+		
+		Select month = new Select(driver.findElement(By.name("fromMonth")));
+		month.selectByVisibleText("August");
+		
+		Select day = new Select(driver.findElement(By.name("fromDay")));
+		day.selectByVisibleText("15");
+		
+		Select to = new Select(driver.findElement(By.name("toPort")));
+		to.selectByVisibleText("Sydney");
+		
+		driver.findElement(By.name("findFlights")).click();
+		
+		
+	
+	}
 	
 	@DataProvider(name="logindata")
 	public String[][] login_data() throws Exception
