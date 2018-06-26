@@ -5,10 +5,9 @@
     <classes>
       <class name="selenium1pack.BookTicketTest">
         <methods>
-          <include name="findFlight"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="login" invocation-numbers="0"/>
+          <include name="login" invocation-numbers="1 2"/>
         </methods>
       </class> <!-- selenium1pack.BookTicketTest -->
     </classes>
