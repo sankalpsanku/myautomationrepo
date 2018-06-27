@@ -2,6 +2,8 @@ package selenium1pack;
 
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -24,11 +26,14 @@ public class BookTicketTest {
 	private WebDriver driver;
 	private int colNum = 2;
 	private int rowNum = 1;
-	
+	private static Logger Log = Logger.getLogger(BookTicketTest.class.getSimpleName());
 	@Test(priority=1,dataProvider="logindata")
   public void login(String txtusername, String txtpassword) throws Exception {
 		try {
+		
+		Log.info("Entering the username");	
 		LoginPage.uname.sendKeys(txtusername);
+		Log.info("Entering the password");
 		LoginPage.pass.sendKeys(txtpassword);
 		LoginPage.login_button.click();
 		//Assert.assertEquals("Find a Flight: Mercury Tours:", driver.getTitle());
@@ -38,6 +43,7 @@ public class BookTicketTest {
 		}
 		catch(AssertionError e)
 		{
+			Log.error("assertion error");
 			ExcelUtility.setExcelData(rowNum, colNum, "Fail");
 		}
 		finally {
@@ -92,6 +98,7 @@ public class BookTicketTest {
 	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	  driver.get("http://newtours.demoaut.com/");
 	  PageFactory.initElements(driver, LoginPage.class);
+	  DOMConfigurator.configure("Log4j.xml");
   }
 
   @AfterTest

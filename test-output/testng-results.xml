@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="181983" started-at="2018-06-26T11:43:14Z" finished-at="2018-06-26T11:46:16Z">
+  <suite name="Default suite" duration-ms="135349" started-at="2018-06-27T10:39:38Z" finished-at="2018-06-27T10:41:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="181983" started-at="2018-06-26T11:43:14Z" finished-at="2018-06-26T11:46:16Z">
+    <test name="Default test" duration-ms="135349" started-at="2018-06-27T10:39:38Z" finished-at="2018-06-27T10:41:53Z">
       <class name="selenium1pack.BookTicketTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="beforeTest" is-config="true" duration-ms="123517" started-at="2018-06-26T11:43:14Z" finished-at="2018-06-26T11:45:18Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:selenium1pack.BookTicketTest@1fc2b765]" name="beforeTest" is-config="true" duration-ms="35939" started-at="2018-06-27T10:39:38Z" finished-at="2018-06-27T10:40:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="login" duration-ms="44005" started-at="2018-06-26T11:45:18Z" data-provider="logindata" finished-at="2018-06-26T11:46:02Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@1fc2b765]" name="login" duration-ms="92058" started-at="2018-06-27T10:40:18Z" data-provider="logindata" finished-at="2018-06-27T10:41:50Z">
           <params>
             <param index="0">
               <value>
@@ -27,7 +27,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="login" duration-ms="3035" started-at="2018-06-26T11:46:02Z" data-provider="logindata" finished-at="2018-06-26T11:46:06Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@1fc2b765]" name="login" duration-ms="1752" started-at="2018-06-27T10:41:50Z" data-provider="logindata" finished-at="2018-06-27T10:41:52Z">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at utility.ExcelUtility.setExcelData(ExcelUtility.java:57)
-at selenium1pack.BookTicketTest.login(BookTicketTest.java:35)
+at selenium1pack.BookTicketTest.login(BookTicketTest.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -76,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="login" duration-ms="10677" started-at="2018-06-26T11:46:06Z" data-provider="logindata" finished-at="2018-06-26T11:46:16Z">
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:1, instance:selenium1pack.BookTicketTest@1fc2b765]" name="login" duration-ms="1682" started-at="2018-06-27T10:41:52Z" data-provider="logindata" finished-at="2018-06-27T10:41:53Z">
           <params>
             <param index="0">
               <value>
@@ -93,7 +93,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at utility.ExcelUtility.setExcelData(ExcelUtility.java:57)
-at selenium1pack.BookTicketTest.login(BookTicketTest.java:35)
+at selenium1pack.BookTicketTest.login(BookTicketTest.java:40)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -125,7 +125,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium1pack.BookTicketTest@3aeaafa6]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-26T11:46:16Z" finished-at="2018-06-26T11:46:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:selenium1pack.BookTicketTest@1fc2b765]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-06-27T10:41:53Z" finished-at="2018-06-27T10:41:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
